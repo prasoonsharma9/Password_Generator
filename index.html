@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!------------- MAIN CONTAINER --------------->
+  <div class="container">
+    <h1>Password Generator</h1>
+
+    <!-------- DISPLAY SCREEN -------->
+    <div class="password-display">
+      <input readonly placeholder="Password" data-passwordDisplay>
+      <button data-copyBtn>
+        <i class="fa-regular fa-copy"></i>
+        <span data-copyMsg></span>
+      </button>
+    </div>
+
+    <!------- INPUT CONTAINER ------------->
+    <div class="input-container">
+      <p>Password Length</p>
+      <p data-numberLength>0</p>
+    </div>
+
+    <!------ SLIDER ------->
+    <input type="range" min="1" max="30" class="slider" step="1 " data-passwordSlider>
+
+    <div>
+      <input type="checkbox" id="uppercase">
+      <label for="uppercase">Include Uppercase Letters</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="lowercase">
+      <label for="lowercase">Include Lowercase Letters</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="number">
+      <label for="number">Include Numbers</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="symbol">
+      <label for="symbol">Include Symbols</label>
+    </div>
+
+    <!----------- STRENGTH BOX ---------->
+    <div class="strength-box">
+      <p>Strength</p>
+      <div class="circle" data-strengthCircle></div>
+    </div>
+
+    <!---------- BUTTON ----------->
+    <button data-passwordButton>GENERATE PASSWORD</button>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
