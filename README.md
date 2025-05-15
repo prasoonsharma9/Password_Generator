@@ -59,14 +59,13 @@ Click Copy to copy the generated password to your clipboard.
 ├── index.html         # Main HTML page
 ├── style.css          # Stylesheet for UI
 ├── script.js          # JavaScript logic
-└── images/
-    └── screenshot.png # (Optional) UI screenshot
 
 
-🙋‍♂️ Author
-Prasoon Kumar Sharma
-  🌐 GitHub: @prasoonsharma9
-  💼 LinkedIn: https://www.linkedin.com/in/prasoon-kumar-sharma-405655258/
+## 🙋‍♂️ Author
+
+**Prasoon Kumar Sharma**  
+🌐 GitHub: (https://github.com/prasoonsharma9)  
+💼 LinkedIn: https://www.linkedin.com/in/prasoon-kumar-sharma-405655258/
 
 
 
