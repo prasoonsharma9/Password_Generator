@@ -14,7 +14,7 @@ const symbol = '~/.,<>:][{}\|!@#$%^&*()_+=-';
  
 let password = "";
 let passwordLength = 15;  
-let checkCount = 1;
+let checkCount = 0 ;
 handleSlide();
 
 
@@ -96,7 +96,7 @@ async function copyContent(){
 
 // FUNCTION FOR SHUFFLING THE PASSWORD
 function shufflePassword(array){
-  // Fisher Yates method
+  // Fisher Yates method..
   for(let i=array.length-1; i>0; i--){
     const j = Math.floor(Math.random() * (i+1));
     const temp = array[i];
@@ -141,12 +141,12 @@ copyBtn.addEventListener('click', () => {
     copyContent();
 })
 
-// FUNCTION TO GENERATE PASSWORD IN CLICKING THE GENERATE BUTTON
-function generatePassword(){
+// FUNCTION TO GENERATE PASSWORD ON CLICKING THE GENERATE BUTTON
+generateBtn.addEventListener("click", () => {
   
   if(checkCount == 0) return;
   if(passwordLength < checkCount){
-    passwordLength = checkCount;
+    passwordLength = checkCount; 
     handleSlide();
   }
 
@@ -196,8 +196,5 @@ console.log("UI addition done");
   // AFTER SHOWING THE PASSWORD WE HAVE TO SHOW ITS STRENGTH..
   calStrength();
 
-
-
-
-}
+});
 
