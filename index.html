@@ -5,6 +5,7 @@
   <title>Password Generator</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!------------- MAIN CONTAINER --------------->
@@ -13,7 +14,7 @@
 
     <!-------- DISPLAY SCREEN -------->
     <div class="password-display">
-      <input readonly placeholder="Password" data-passwordDisplay>
+      <input readonly placeholder="Password" data-passwordDisplay class="display">
       <button data-copyBtn>
         <i class="fa-regular fa-copy"></i>
         <span data-copyMsg></span>
@@ -22,11 +23,12 @@
 
     <!------- INPUT CONTAINER ------------->
     <div class="input-container">
-      <p>Password Length</p>
-      <p data-numberLength>0</p>
-    </div>
+      <div class="length-container">
+        <p>Password Length</p>
+        <p data-numberLength>0</p>
+      </div>
 
-    <!------ SLIDER ------->
+      <!------ SLIDER ------->
     <input type="range" min="4" max="30" class="slider" step="1 " data-passwordSlider>
 
     <div>
@@ -56,7 +58,8 @@
     </div>
 
     <!---------- BUTTON ----------->
-    <button data-passwordButton>GENERATE PASSWORD</button>
+    <button class="pass-btn"  data-passwordButton>GENERATE PASSWORD</button>
+    </div>
 
   </div>
 

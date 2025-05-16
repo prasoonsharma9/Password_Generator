@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100wh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #020024;
+  background: linear-gradient(rgba(9, 3, 20, 0.947));
+}
+
+.container{
+  max-width: 90%;
+  width: 450px;
+}
+
+h1{
+  text-align: center;
+  color: #fff;
+  opacity: 0.7;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.password-display{
+  position: relative;
+  background-color: rgb(56, 55, 55);
+  margin: 1rem 0;
+  padding-top: 0.4rem;
+  border-radius: 1rem;
+  border-bottom: 0.3rem solid rgb(142, 136, 136);
+}
+
+.display{
+  width: 100%;
+  background-color: transparent;
+  padding: 0%1.15rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 1px;
+  padding-right: 3.25px;
+  border: none;
+}
+
+.display::placeholder{
+  position: absolute;
+  color: rgb(133, 133, 5);
+  opacity: 0.65px;
+  text-transform: uppercase;
+  top: 50%;
+  left: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 30px;
+  bottom: -50%;
+  transform: translateY(-30%);
+}
+
+.password-display button{
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.password-display button i{
+  background-color: transparent;
+}
+
+.input-container{
+  background-color:  rgb(56, 55, 55);
+  width: 100%;
+  border-radius: 1rem;
+  padding: 2rem;
+  border-bottom: 0.3rem solid rgb(142, 136, 136); 
+}
+
+.length-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.length-container p:nth-child(1){
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.length-container p:nth-child(2){
+  color: rgb(158, 158, 34);
+  font-size: 1.5rem;
+}
+
+.strength-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.strength-box p{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.circle{
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+.pass-btn{
+  width: 100%;
+  background-color: rgba(9, 3, 20, 0.879);
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 0.75rem;
+  border: none;
+  border-bottom: 0.3rem solid rgb(140, 136, 142);
+  color: #fff;
+  opacity: 0.7;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}

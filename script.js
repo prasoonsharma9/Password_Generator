@@ -16,6 +16,7 @@ let password = "";
 let passwordLength = 15;  
 let checkCount = 0 ;
 handleSlide();
+setIndicator("#ccc"); 
 
 
 
