@@ -36,6 +36,7 @@ h1{
   background-color: rgb(56, 55, 55);
   margin: 1rem 0;
   border-radius: 1rem;
+  border: none;
   border-bottom: 0.3rem solid rgb(142, 136, 136);
 }
 
@@ -62,6 +63,7 @@ h1{
   font-size: 1.5rem;
   line-height: 30px;
   transform: translateY(-50%);
+  border: none;
 }
 
 .password-display button{
@@ -76,6 +78,27 @@ h1{
 .fa-regular{
   background-color: rgb(56, 55, 55);
   color: #fff;
+  font-size: 1.2rem;
+}
+
+.copy-btn-span{
+  position: absolute;
+  color: #fff;
+  background-color: rgb(3, 3, 3);
+  top: -35px;
+  left: -20px;
+  padding: 5px 15px;
+  font-size: 1rem;
+  border-radius: 1rem;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: all 250ms ease-in-out;
+}
+
+.copy-btn-span.active{
+  opacity: 1;
+  transform: scale(1);
 }
 
 .input-container{
