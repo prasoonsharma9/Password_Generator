@@ -13,7 +13,7 @@ const allChecks = document.querySelectorAll("input[type=checkbox]");
 const symbol = '~/.,<>:][{}\|!@#$%^&*()_+=-';
  
 let password = "";
-let passwordLength = 15;  
+let passwordLength = 17;  
 let checkCount = 0 ;
 handleSlide();
 setIndicator("#ccc"); 
@@ -25,11 +25,17 @@ setIndicator("#ccc");
 function handleSlide(){
   inputslider.value = passwordLength;
   lengthDisplay.innerText = inputslider.value;
+
+  const mini = inputslider.min;
+  const maxi = inputslider.max;
+  inputslider.style.backgroundSize = ((passwordLength - mini)*100 / (maxi - mini)) + "% 100%";
+
 }
 
 // ---------- FUNCTION TO SET THE COLOR OF STRENGTH CITCLE --------------
 function setIndicator(color){
   indicator.style.backgroundColor = color;
+  indicator.style.boxShadow = `0px 0px 12px 1px ${color}`;
 }
 
 // -------- FUNCTION TO GET RANDOM INTEGER AND VLAUES ---------
